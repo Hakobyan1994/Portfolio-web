@@ -1,0 +1,364 @@
+.main-div {
+    width: 100%;
+    min-height: 109.03px;
+    background-color: #141D2F;
+    justify-content: center;
+    padding: 37px 100px;
+    transition: all 0.2s ease;
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 0 auto;
+    z-index: 1000;
+    left: 0;
+    right: 0; 
+    box-sizing: border-box;
+} 
+
+ .main-info{
+    width: 1600px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+ }
+ 
+.static-position {
+    position: static;
+  }
+
+.name {
+    color: white;
+    font-size: 46px;
+    cursor: pointer;
+    letter-spacing: 2px;
+}
+
+.color-s {
+    color: #9747FF !important;
+}
+
+.color-m {
+    color: #70E61C !important;
+}
+
+a {
+    text-decoration: none;
+    font-size: 23px;
+    gap: 29px;
+    color: #ffff;
+
+    &:hover {
+        color: #70E61C;
+        cursor: pointer;
+        transition: 75ms;
+    }
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-content {
+    display: flex;
+    gap: 29px;
+}
+
+.actived {
+    color: #70E61C;
+    text-decoration: underline;
+    text-decoration-thickness: 4px;
+    cursor: default;
+    text-decoration-color: #9747FF;
+    overflow-x: visible;
+}
+
+.color-text {
+    color: #70E61C;
+}
+
+
+.padding-bootom {
+    padding-bottom: 2px
+}
+
+
+.main-div.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #141D2F;
+    padding: 37px 100px;
+    box-sizing: border-box;
+    transition: all 0.2s ease;
+    z-index: 100;
+    margin: 0 auto; 
+    min-height: 143.03px;
+}
+
+.second-logo {
+    color: white;
+    font-size: 46px;
+    cursor: pointer;
+    letter-spacing: 2px;
+    position: absolute;
+    top: 37px;
+    left: 100px;
+    opacity: 0;
+}
+
+.second-logo .color-s {
+    color: #9747FF !important;
+}
+
+
+.second-logo .color-m {
+    color: #70E61C !important;
+}
+
+.hamburger-menu {
+    position: fixed;
+    top: 22px;
+    right: 0;
+    padding: 37px 100px;
+    cursor: pointer;
+    display: none;
+}
+
+.contact {
+    display: none;
+}
+
+.close-nav {
+    position: fixed;
+    top: 22px;
+    right: 0;
+    padding: 37px 100px;
+    cursor: pointer;
+    z-index: 1000000;
+}
+
+.showingNavbar {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    opacity: 0.9;
+    visibility: visible;
+    background-color: #141D2F;
+    transform: translate(0);
+    transition: 0.5s ease-in-out;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+.nav {
+    display: flex;
+    gap: 18px;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 228px;
+}
+
+
+.active-block {
+    display: block;
+}
+
+.closeblock {
+    display: block;
+}
+
+
+.closeNavbar {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    opacity: 0.9;
+    visibility: visible;
+    background-color: #141D2F;
+    transform: translate(300%);
+    transition: 0.5s ease-in-out;
+    position: fixed;
+    right: 0;
+    top: 0;
+}
+
+
+.closenav {
+    display: flex;
+    gap: 18px;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 228px;
+}
+
+
+.animate-burger {
+    opacity: 1;
+    position: relative;
+    z-index: -5;
+}
+
+.showburger {
+    opacity: 1;
+}
+
+.closet {
+    opacity: 1;
+}
+
+.closet1 {
+    opacity: 0;
+}
+
+.temp-image {
+    position: absolute;
+    top: 36px;
+    right: 101px;
+    z-index: -2;
+    opacity: 1;
+    animation: fadeOut 0.5s forwards;
+}
+
+.open-anim {
+    position: relative;
+    z-index: -2;
+    opacity: 1;
+    animation: fadeOut 0.5s forwards;
+}
+
+.language-button {
+    border: none;
+    cursor: pointer;
+    font-size: 12px;
+    background-color: #141D2F;
+    color: #FFFFFF;
+    font-size: 23px;
+
+    &:hover {
+        color: #70E61C;
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+  
+@media(max-width:899px) {
+    .hamburger-menu {
+        display: flex;
+    }
+
+    nav {
+        z-index: 9999;
+        transform: translate(300%);
+    }
+
+    .second-logo {
+        opacity: 1;
+    }
+
+    .contact {
+        display: flex;
+        gap: 0;
+    }
+}
+
+
+@media(max-width:540px) {
+    .nav {
+        display: flex;
+        gap: 7px;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 177px;
+    }
+}
+
+@media(max-width:850px) {
+    .name {
+        position: fixed;
+        left: 100px;
+    }  
+}
+
+
+.mainBlock {
+    position: fixed;
+}
+
+
+@media(max-width:850px) {
+    .name {
+        position: fixed;
+        left: 27px;
+    }
+
+    .second-logo {
+        left: 27px;
+    }
+
+    .hamburger-menu {
+        padding: 37px 27px;
+    }
+
+    .close-nav {
+        padding: 37px 27px;
+    }  
+
+    .temp-image {
+        right: 37px;
+    }
+}
+
+@media(max-width:471px) {
+    .nav {
+        margin-top: 122px;
+    }
+}
+
+@media(max-width:425px) {
+    a {
+        font-size: 19px;
+    }
+
+    .nav {
+        display: flex;
+        gap: 7px;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 70px;
+    }
+}
+
+@media(max-width:400px) {
+    .name {
+        font-size: 35px;
+    }
+
+    .second-logo {
+
+        font-size: 35px;
+        left: 27px;
+    }
+
+    .hamburger-menu {
+        position: fixed;
+        top: 14px;
+    }
+
+    .close-nav {
+        position: fixed;
+        top: 14px;
+    }
+}

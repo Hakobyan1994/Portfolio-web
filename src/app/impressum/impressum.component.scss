@@ -1,0 +1,56 @@
+.impressum {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+    
+}
+
+ .aaa{
+    color: #FFFFFF;
+    text-align: center;
+    box-sizing: border-box;
+    margin: 0 auto;
+    flex: 1; 
+    padding-bottom: 100px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+ }
+ 
+
+
+.impressum-page app-nav-bar.main-div {
+    position: static;
+}
+
+.email {
+    color: #FFFFFF;
+    cursor: pointer !important;
+}
+
+.email:hover {
+    color: #70E61C;
+}
+
+.impressum-info {
+    color: #FFFFFF;
+}
+
+.impressum-info:hover {
+    color: #70E61C;
+}
+
+p {
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+app-footer {
+   min-height: 240px;
+}
+
+@media(max-width:899px) {
+    .impressum {
+        padding-bottom: 70px; 
+    }
+}

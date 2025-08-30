@@ -1,0 +1,64 @@
+<div id="contact" class="contact-main-div">
+    <div data-aos="fade-right" class="contact-title">
+        <div class="big-line"></div>
+        <h1>{{'Main_Contact'|translate}}</h1>
+    </div>
+
+    <div class="main-contact-form">
+        <div class="hiring-title">
+            <h2>{{'Solve_Problem'|translate}}</h2>
+            <p>{{'Solve_Title'|translate}}</p>
+            <p>{{'Profession_Title'|translate}} <span>{{'Job_Contact'|translate}}</span></p>
+        </div>
+        <form (ngSubmit)="onSubmit()">
+            <div data-aos="fade-up" data-aos-anchor-placement="center-bottom" class="main-sending-email">
+                <div class="name-input" [ngClass]="{'error': nameRequired || checkValidAll, 'valid': nameValid}">
+                    <input type="text" name="username" [placeholder]="'Name' | translate" [(ngModel)]="contactData.name"
+                        (blur)="checkName()" (input)="checkName()" (focus)="checkName()" width:auto>
+                    <span *ngIf="nameRequired || (checkValidAll && !nameValid)">{{'Name_required'|translate}}</span>
+                </div>
+                <div class="email-input" [ngClass]="{'error': emailRequired || checkValidAll, 'valid': emailValid}">
+                    <input [(ngModel)]="contactData.email" [ngModelOptions]="{standalone: true}" type="text"
+                        [placeholder]="'Email'|translate" required (blur)="checkEmail()" (input)="checkEmail()"
+                        (focus)="checkEmail()">
+                    <span *ngIf="emailRequired || (checkValidAll && !emailValid)"> {{'Email_required'|translate}}</span>
+                </div>
+
+                <div class="message-area"
+                    [ngClass]="{'error': messageRequired || checkValidAll, 'valid': messageValid}">
+                    <textarea [(ngModel)]="contactData.message" [ngModelOptions]="{standalone: true}"
+                        [placeholder]="'Message'| translate" (input)="checkTextArea()" (blur)="checkTextArea()"
+                        (focus)="checkTextArea()">
+                    </textarea>
+                    <span
+                        *ngIf="messageRequired || (checkValidAll && !messageValid)">{{'Mesagge_required'|translate}}</span>
+                </div>
+                <div class="main-checkbox">
+                    <div class="checkbox-box">
+                        <input type="checkbox" (change)="checkBox($event)" [checked]="checkBoxChecked">
+                        <span class="privacy-info"> {{'Privacy_Policy_Text'|translate}} <a class="privacy-a"
+                                href="privacy-policy">
+                                {{'Privacy_Policy'|translate}}</a>
+                            {{'Privacy_Policy_Second_Text'|translate}}</span>
+                    </div>
+                    <div class="privac-text">
+                        <span *ngIf="checkedError" class="accept-privacy-text">{{'Privacy_required'|translate}}</span>
+                    </div>
+                    <div class="submit-main"
+                        [ngClass]="{'allValid':emailValid && emailValid && messageValid && checkBoxChecked}">
+                        <button type="submit">{{'Send_Message'|translate}}</button>
+                    </div>
+                    <div class="email-send" *ngIf="emailSend"> {{'emailText'|translate}}</div>
+                </div>
+            </div>
+            <div class="elipse">
+                <img class="vector" src="./assets/info_image/Vector (12).png">
+                <div (click)="scrollToAllAbove()" class="vector-green-box">
+                    <img class="vector-green" src="./assets/info_image/vector_green.png">
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="background-image"></div>

@@ -1,0 +1,29 @@
+<div     class="main-div">
+    <div class="about-me">
+        <h1  data-aos="zoom-in">{{ "About_Me" | translate}}</h1>
+        <div>
+            <p [ngClass]="{'small-font':globalVariable.checkFontsize}" class="font">{{'Person_description'|translate}}</p>
+        </div>
+        <div class="working-skill">
+            <img src="./assets/logo/expert.png" alt="">
+            <p [ngClass]="{'small-font':globalVariable.checkFontsize}">{{'Working_Skill_First' |translate}}</p>
+        </div>
+        <div class="working-skill">
+            <img src="./assets/logo/vector.png">
+            <p [ngClass]="{'small-font':globalVariable.checkFontsize}">{{'Working_Skill_Second'|translate}}</p>
+        </div>
+        <div class="working-skill">
+            <img src="./assets/logo/puzzle.png">
+            <p [ngClass]="{'small-font':globalVariable.checkFontsize}">{{'Working_Skill_Third' | translate}}</p>
+        </div>
+    </div>
+    <div data-aos="flip-left"
+    data-aos-easing="ease-out-cubic"
+    data-aos-duration="2000" class="picture-box">
+        <div class="elipse">
+            <img src="./assets/my_image/file (1).png">
+        </div>
+        <div class="elipse-line"></div>
+    </div>
+</div>
+<div class="background-box"></div>

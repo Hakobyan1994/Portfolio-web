@@ -1,0 +1,23 @@
+ html {
+    scroll-behavior: smooth;
+ }
+
+ a {
+    text-decoration: none;
+ }
+
+ body {
+    background-color: #141D2F;
+    font-family: 'Poppins';
+    margin: 0;
+    overflow-x:hidden;
+   
+   } 
+  
+ @font-face {
+    font-display: swap;
+    font-family: 'Poppins';
+    src: url('./assets/poppins\ \(2\)/Poppins-Regular.ttf') (format('woff2'));
+ }
+
+  

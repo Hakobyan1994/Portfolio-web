@@ -1,0 +1,41 @@
+<div class="main-div" [ngStyle]="{'position': checkPositionType ? 'sticky' : 'fixed'}"
+   [ngClass]="{'sticky': isSticky, 'active-block':addShowNavbar,'closeblock':closeNavbar,}">
+   <div class="main-info">
+      <nav [ngClass]="{'showingNavbar': addShowNavbar,'closeNavbar':closeNavbar} ">
+         <div class="name-box">
+            <span class="second-logo" (click)="scrollAllAbove()">Me<span class="color-s">s</span>ro<span
+                  class="color-m">p</span></span>
+         </div>
+         <div class="nav-content" [ngClass]="{'nav':addShowNavbar,'closenav':closeNavbar}">
+            <a href="#personalInfo" (click)="scrollToAboutme($event,'personalInfo')">
+               <span [ngClass]="{'actived': addingAboutmeStyle}">{{'About' | translate}}</span>
+               <span [ngStyle]="{'color': addingAboutmeStyle ? '#70E61C' : 'inherit'}"> {{'Me' | translate}}</span>
+            </a>
+            <a href="#skilInfo" (click)="scrollToMySkills($event,'skilInfo')">
+               <span [ngClass]="{'actived': addingMySkillsStyle}">{{ 'SKILLS' | translate }}</span>
+               <span *ngIf="checkTitleStatus" [ngClass]="{'color-text':addingMySkillsStyle}">keit</span>
+            </a>
+            <a href="#portfolioInfo" (click)="scrollToMyPortfolio($event,'portfolioInfo')">
+               <span [ngClass]="{'actived': addingMyPortfolioStyle}">Portf</span>
+               <span [ngStyle]="{'color': addingMyPortfolioStyle ? '#70E61C' : 'inherit'}">olio</span>
+            </a>
+            <a href="#contact" (click)="scrollToMyContact($event,'contact')" class="contact">
+               <span [ngClass]="{'actived':addingContactStyle}">{{'Contact'| translate }}</span>
+               <span [ngStyle]="{'color': addingContactStyle ? '#70E61C' : 'inherit'}">{{'act'|translate}}</span>
+            </a>
+            <button (click)="switchLanguage()" class="language-button">{{buttonText}}</button>
+         </div>
+      </nav>
+      <div class="hamburger-menu">
+         <img (click)="navbarShow()" *ngIf="!addShowNavbar" class="burger-image" src="./assets/burger_menu/burger.png">
+         <img class="open-anim" *ngIf="showopenImage" src="./assets/burger_menu/animclose.png">
+      </div>
+      <span class="name" (click)="scrollAllAbove()">Me<span class="color-s">s</span>ro<span
+            class="color-m">p</span></span>
+      <div *ngIf="addShowNavbar" class="close-nav">
+         <img class="closet" [ngClass]="{'closet1': closeNavbar}" (click)="closeNav()"
+            src="./assets/burger_menu/close.png">
+         <img class="temp-image" *ngIf="showTempImage" src="./assets/burger_menu/animburger.png">
+      </div>
+   </div>
+</div>

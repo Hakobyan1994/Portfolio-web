@@ -1,0 +1,81 @@
+.bubble-main-info{
+    margin-left: 115px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 35px;
+}
+
+.bubble-info {
+    max-width: 513px;
+    height: 339px;
+
+    h3 {
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 38px;
+        color: #9747FF;
+    }
+
+    span {
+        font-size: 23px;
+        font-weight: 400;
+        line-height: 23px;
+        color: #70E61C;
+
+    }
+
+    p {
+        color: #FFFFFF;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19px;
+    }
+}
+
+.main-button-box {
+    display: flex;
+    gap: 86px;
+    margin-top: 44px;
+}
+
+.live-test {
+    padding: 15px 30px;
+    border-radius: 10px;
+    background-color: #9747FF;
+    cursor: pointer;
+
+    &:hover {
+        transition: background-color 75ms ease-out, ;
+        background-color: #70E61C;
+    }
+
+    a {
+        font-size: 23px;
+        font-weight: 400;
+        line-height: 27px;
+        color: #FFFFFF;
+
+    }
+}
+
+.git-test {
+    padding: 15px 30px;
+    border-radius: 10px;
+    border: 1px solid;
+    border-color: #70E61C;
+    cursor: pointer;
+     
+    
+    &:hover {
+        transition: background-color 75ms ease-out, ;
+        background-color: #70E61C;
+    }
+
+    a{
+        color: #FFFFFF;
+        font-size: 23px;
+        font-weight: 400;
+        line-height: 27px;
+    }
+}

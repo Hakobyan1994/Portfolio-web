@@ -1,0 +1,34 @@
+.main-div {
+    display: flex;
+    flex-direction: column;
+    gap: 180px;
+    height: 100vh;
+    font-family: 'Poppins';
+ }   
+  
+ app-skill-content{
+    margin: 0 auto;
+ }  
+
+ app-contact-content{
+    margin: 0 auto;
+ } 
+
+ app-personal-info{
+    margin: 0 auto;
+ }
+
+@media(max-width:1565px){
+   app-contact-content{
+      margin: 0;
+   }    
+   app-skill-content{
+      margin: 0;
+  } 
+ }   
+
+ @media(max-width:630px){
+    app-personal-info{
+        margin: 0;
+     }
+}

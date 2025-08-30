@@ -1,0 +1,21 @@
+<div class="main-div">
+    <div class="background-image">
+        <div class="picture-box">
+            <img class="myPicture" src="./assets/my_image/myFoto.png">    
+        </div>
+    </div>
+    <div  class="personal-info">
+        <div class="display-div">
+            <span class="myself">{{'myself'|translate}}</span>
+            <div class="name-profession">
+                <span class="personal-name">Mesrop Hakobyan</span>
+                <span class="personal-profession">FRONTEND DEVELOPER</span>
+            </div>
+        </div>
+        <div class="talk-a">
+            <a href="#contact" (click)="scrollToSection($event,'contact')" >{{'Button_Talk'| translate}}</a>
+        </div>
+    </div>
+</div> 
+<app-social-content ></app-social-content>
+<div class="backgroud-hero"></div>
