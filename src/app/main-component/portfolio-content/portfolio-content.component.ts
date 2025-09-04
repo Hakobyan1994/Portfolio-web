@@ -3,6 +3,7 @@ import { JoinPortfolioComponent } from './join-portfolio/join-portfolio.componen
 import { ElpololocoPortfolioComponent } from './elpololoco-portfolio/elpololoco-portfolio.component';
 import { DabubblePortfolioComponent } from './dabubble-portfolio/dabubble-portfolio.component';
 import { CoderrPortfolioComponent } from './coderr-portfolio/coderr-portfolio.component';
+import { VideoflixPortfolioComponent } from './videoflix-portfolio/videoflix-portfolio.component';
 import { TranslateModule } from '@ngx-translate/core';
 import  AOS from 'aos';
 import 'aos/dist/aos.css'; 
@@ -14,7 +15,8 @@ import 'aos/dist/aos.css';
     ElpololocoPortfolioComponent,
     DabubblePortfolioComponent,
     TranslateModule,
-    CoderrPortfolioComponent
+    CoderrPortfolioComponent,
+    VideoflixPortfolioComponent
   ],
   templateUrl: './portfolio-content.component.html',
   styleUrl: './portfolio-content.component.scss'

@@ -43,7 +43,8 @@
   "Button_Talk": "Reden wir",
   "Scroll":"Scrollen",
   "Info_Impressum_Text":"Angaben gemäß § 5 DDG",
-   "Info_Impressum_Person":"Vertreten durch:",
-   "Info_Impressum_Generate":"Website Impressum von",
-   "Coderr_Info":"Eine dynamische Plattform, die Kunden und Unternehmen verbindet.Business-Nutzer erstellen und verwalten Angebote, Kunden können diese einfach online entdecken und bestellen."
+  "Info_Impressum_Person":"Vertreten durch:",
+  "Info_Impressum_Generate":"Website Impressum von",
+  "Coderr_Info":"Eine dynamische Plattform, die Kunden und Unternehmen verbindet.Business-Nutzer erstellen und verwalten Angebote, Kunden können diese einfach online entdecken und bestellen.",
+  "Videoflix_Info":"VideoFlix ist eine moderne Web-Anwendung, auf der Nutzer Videos anschauen können. Die Seite bietet eine übersichtliche Benutzeroberfläche, schnelles Laden der Inhalte und ein einfaches, intuitives Design. Das Projekt zeigt die Grundfunktionen einer Streaming-Plattform mit Fokus auf Nutzerfreundlichkeit und klarer Struktur." 
 }

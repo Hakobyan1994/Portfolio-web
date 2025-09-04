@@ -1,0 +1,140 @@
+.main-videoflix-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 35px;
+    margin: 0 auto;
+    max-width: 1345px;
+} 
+
+.picture-box{
+    img{
+    width: 621px;
+    height: auto;
+    }
+}
+
+.videoflix-info {
+    max-width: 513px;
+    height: 339px;
+    cursor: default;
+
+    h3 {
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 38px;
+        color: #9747FF;
+        margin-block-start: 0;
+    }
+
+    span {
+        font-size: 23px;
+        font-weight: 400;
+        line-height: 23px;
+        color: #70E61C;
+    }
+
+    p {
+        color: #FFFFFF;
+        font-size: 17px;
+        font-weight: 400;
+    }
+}
+
+.main-button-box {
+    display: flex;
+    gap: 86px;
+    margin-top: 44px;
+}
+
+.live-test {
+    padding: 15px 30px;
+    border-radius: 10px;
+    background-color: #9747FF;
+    cursor: pointer;
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 27px;
+    color: #FFFFFF;
+
+    &:hover {
+        transition: background-color 75ms ease-out, ;
+        background-color: #70E61C;
+    }
+}
+
+.github-button {
+    padding: 15px 30px;
+    border-radius: 10px;
+    border: 1px solid #70E61C;
+    cursor: pointer;
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 27px;
+    color: #FFFFFF;
+
+    &:hover {
+        transition: background-color 75ms ease-out, ;
+        background-color: #70E61C;
+    }
+}
+
+
+@media (max-width:1565px) {
+    .main-videoflix-info{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+        gap: 0;
+        margin-left: 0;
+    }
+
+    .videoflix-info h3 {
+        text-align: center;
+    }
+
+    .videoflix-info  span {
+        display: flex;
+        justify-content: center;
+    }
+
+    .main-button-box {
+        justify-content: center;
+    }
+}
+
+@media (max-width:722px) {
+    .picture-box {
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+}
+
+
+@media (max-width:520px) {
+    .join-info {
+        max-width: 100%;
+        height: 339px;
+        cursor: default;
+    }
+}
+
+
+@media(max-width:498px) {
+    .main-button-box {
+        display: flex;
+        gap: 10px;
+        margin-top: 44px;
+    }
+
+    .live-test {
+        font-size: 16px;
+    }
+
+    .github-button {
+        font-size: 16px;
+    }
+}
